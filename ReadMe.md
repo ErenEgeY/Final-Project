@@ -1,77 +1,120 @@
-# Mobile Application Project
+# Mobile Photo Gallery Application "York"
 
-This is a React Native mobile application built with Expo.
+A React Native mobile application built with Expo that allows users to browse and interact with a beautiful collection of photos from Lorem Picsum. The application features a modern UI, smooth navigation, and image zoom capabilities.
 
-## 📱 Features
+## 🌟 Features
 
-- Modern and responsive UI design
-- Navigation system with React Navigation
-- Image viewing with zoom capabilities
-- State management with Zustand
-- Custom fonts (Montserrat)
-- Gesture handling and animations
+- **Photo Gallery**: Browse through a curated collection of high-quality photos from Lorem Picsum
+- **Photo Details**: View detailed information about each photo including author and dimensions
+- **Zoom Capability**: Pinch to zoom functionality for detailed photo viewing
+- **Modern UI**: Clean and responsive user interface with beautiful transitions
+- **Smooth Navigation**: Easy navigation between screens using React Navigation
+- **Custom Fonts**: Beautiful typography with Montserrat font family
+- **Offline Support**: View previously loaded images even without internet connection
 
-## 🚀 Technologies
+## 🚀 Technologies Used
 
-- React Native
-- Expo
-- React Navigation
-- Axios
-- Zustand
-- React Native Reanimated
-- React Native Gesture Handler
+- [React Native](https://reactnative.dev/) - Mobile application framework
+- [Expo](https://expo.dev/) - Development platform
+- [React Navigation](https://reactnavigation.org/) - Navigation library
+- [Axios](https://axios-http.com/) - HTTP client for API requests
+- [Zustand](https://zustand-demo.pmnd.rs/) - State management
+- [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - Smooth animations
+- [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) - Gesture handling
+
+## 📸 API Integration
+
+This application uses the [Lorem Picsum API](https://picsum.photos/) for fetching high-quality photos. The API is free to use and doesn't require any authentication. The application uses the following endpoints:
+
+```javascript
+Base URL: https://picsum.photos/v2
+
+Endpoints:
+- /list - Get a list of all photos
+- /id/{photo_id} - Get specific photo details
+- /search - Search for photos
+```
+
+Features of the Lorem Picsum API used in this app:
+- Browse through a vast collection of high-quality photos
+- Get detailed information about each photo
+- No API key required
+- Reliable and fast image delivery
+- Support for different image sizes and formats
 
 ## ⚙️ Prerequisites
 
 Before you begin, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 - [Expo CLI](https://docs.expo.dev/get-started/installation/)
+```bash
+npm install -g expo-cli
+```
 - [Git](https://git-scm.com/)
+- Expo Go app on your mobile device ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779))
 
 ## 📥 Installation
 
 1. Clone the repository:
-
 ```bash
-git clone [your-repository-url]
+git clone https://github.com/ErenEgeY/Final-Project.git
 ```
 
 2. Navigate to the project directory:
-
 ```bash
-cd Proje
+cd Final-Project
 ```
 
 3. Install dependencies:
-
 ```bash
 npm install
 ```
 
-## 🎯 Running the App
+## 🎯 Running the Application
 
 1. Start the development server:
-
 ```bash
 npx expo start
 ```
 
-2. To run the app, you can:
-   - Use Expo Go app on your physical device by scanning the QR code
-   - Press 'a' to run on Android emulator
-   - Press 'i' to run on iOS simulator
+2. Run on your device:
+   - 📱 **Physical Device**: 
+     - Install Expo Go app
+     - Scan QR code with your camera (iOS) or Expo Go app (Android)
+   - 💻 **Emulator**:
+     - Press 'a' for Android emulator
+     - Press 'i' for iOS simulator
 
-## 📱 Testing on Physical Device
+## 📱 Available Scripts
 
-1. Install Expo Go app on your device:
+- `npm start` or `expo start`: Start the development server
+- `npm android` or `expo start --android`: Start for Android
+- `npm ios` or `expo start --ios`: Start for iOS
 
-   - [Android Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
-   - [iOS App Store](https://apps.apple.com/app/expo-go/id982107779)
+## 🔧 Troubleshooting
 
-2. Scan the QR code from the terminal with:
-   - Android: Expo Go app
-   - iOS: Camera app
+Common issues and their solutions:
+
+1. **Images not loading**:
+   - Check your internet connection
+   - Verify that the Lorem Picsum API is accessible
+   - Clear the app cache
+
+2. **Metro Bundler issues**:
+```bash
+expo start --clear
+```
+
+3. **Dependencies issues**:
+```bash
+npm install --force
+```
+
+4. **Cache issues**:
+```bash
+expo r -c
+```
 
 ## 📦 Dependencies
 
@@ -108,6 +151,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-Your Name - [eren_yildiz_07@outlook.com]
+Eren Ege YILDIZ - [eren_yildiz_07@outlook.com]
 
 Project Link: [https://github.com/ErenEgeY/Final-Project]
