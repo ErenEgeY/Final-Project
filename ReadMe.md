@@ -22,6 +22,18 @@ A React Native mobile application built with Expo that allows users to browse an
 - [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/) - Smooth animations
 - [React Native Gesture Handler](https://docs.swmansion.com/react-native-gesture-handler/) - Gesture handling
 
+## ⚙️ Prerequisites
+
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+```bash
+npm install -g expo-cli
+```
+- [Git](https://git-scm.com/)
+- Expo Go app on your mobile device ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779))
+
 ## 📸 API Integration
 
 This application uses the [Lorem Picsum API](https://picsum.photos/) for fetching high-quality photos. The API is free to use and doesn't require any authentication. The application uses the following endpoints:
@@ -42,17 +54,6 @@ Features of the Lorem Picsum API used in this app:
 - Reliable and fast image delivery
 - Support for different image sizes and formats
 
-## ⚙️ Prerequisites
-
-Before you begin, ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (version 14 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Expo CLI](https://docs.expo.dev/get-started/installation/)
-```bash
-npm install -g expo-cli
-```
-- [Git](https://git-scm.com/)
-- Expo Go app on your mobile device ([Android](https://play.google.com/store/apps/details?id=host.exp.exponent) / [iOS](https://apps.apple.com/app/expo-go/id982107779))
 
 ## 📥 Installation
 
